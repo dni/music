@@ -33,7 +33,6 @@ var loadTrack = function(button, id, url) {
   wavesurfer[id].on('ready', function(e){
     document.getElementById("track-controls-"+id).style.display = "block";
   });
-  return false;
 };
 
 fetch("tracks.json")

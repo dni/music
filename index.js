@@ -27,15 +27,13 @@ var render = function(id, data) {
 
 var loadTrack = function(button, id, url) {
   button.style.display = "none";
-  return new Promise(function(resolve) {
-    opts.container = '#track'+id;
-    wavesurfer[id] = WaveSurfer.create(opts);
-    wavesurfer[id].load(url);
-    wavesurfer[id].on('ready', function(e){
-      document.getElementById("track-controls-"+id).style.display = "block";
-      resolve();
-    });
+  opts.container = '#track'+id;
+  wavesurfer[id] = WaveSurfer.create(opts);
+  wavesurfer[id].load(url);
+  wavesurfer[id].on('ready', function(e){
+    document.getElementById("track-controls-"+id).style.display = "block";
   });
+  return false;
 };
 
 fetch("tracks.json")

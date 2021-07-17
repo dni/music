@@ -1,0 +1,56 @@
+body {
+  background: darkseagreen;
+  color: #222;
+}
+@media (min-width: 600px) {
+  body {
+    margin: 2% 10%;
+  }
+}
+.waveform {
+  background: darkcyan;
+}
+.controls,
+#track-template {
+  display: none;
+}
+
+.track-info {
+  display: flex;
+  margin-bottom: 12px;
+}
+.track-artwork img {
+  width: 240px;
+  margin-right: 24px;
+}
+.controls {
+  padding: 16px 0 6px 0;
+}
+
+.track-style,
+.btn {
+  background: #333;
+  color: white;
+  padding: 7px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn:hover {
+  color: #333;
+  background: white;
+}
+
+.track-style {
+  position: relative;
+  top: -5px;
+  margin-left: 8px;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px dotted darkcyan;
+  margin: 32px 0;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dni's music multiverse</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>Hello! welcome to my small little music multiverse!</h1>
+  <h3>all tracks are free, you can do with them whatever you want, even monetize, keep in mind if you monetize it, it is bad karma if you don't give back :). also if you use something for non-commercial things i would be happy to get a mention. if you need anything special just contact me.
+</h3>
+  <hr>
+  <div id="tracks"></div>
+  <div id="track-template">
+    <div class="track-wrapper">
+      <div class="track-info">
+        <div class="track-artwork">
+          <img data-src="%artwork%" alt="%title%">
+        </div>
+        <div class="track-text">
+          <h2 class="track-title">%title%
+            <span class="track-style">%style%</span>
+          </h2>
+          <p class="track-date">release date: %date%</p>
+          <p class="track-description">%description%</p>
+          <a class="btn track-load" href="#" onClick="loadTrack(this, %id%, '%url%');">load track</a>
+        </div>
+        </div>
+      <div id="track%id%" class="waveform"></div>
+      <div id="track-controls-%id%" class="controls">
+        <button class="btn" id="button_%id%" onClick="wavesurfer[%id%].playPause();">▶ Play / Pause</button>
+        <a target="_blank" class="btn" href="%url%">download</a>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <script src="node_modules/wavesurfer.js/dist/wavesurfer.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

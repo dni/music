@@ -1,4 +1,14 @@
 var wavesurfer = [];
+var opts = {
+  waveColor: 'chartreuse',
+  progressColor: '#eee',
+  barHeight: 2,
+  barWidth: 1,
+  mediaControls: true,
+  responsive: true,
+  hideScrollbar: true
+};
+
 var el = document.getElementById("tracks");
 var template = document.getElementById("track-template").innerHTML;
 
@@ -17,29 +27,23 @@ var render = function(id, data) {
 
 var loadTrack = function(button, id, url) {
   button.style.display = "none";
-  return new Promise(function(done) {
-    wavesurfer[id] = WaveSurfer.create({
-      container: '#track'+id,
-      waveColor: 'chartreuse',
-      barHeight: 2,
-      barWidth: 1,
-      mediaControls: true,
-      progressColor: '#eee',
-      responsive: true,
-      hideScrollbar: true
-    })
+  return new Promise(function(resolve) {
+    opts.container = '#track'+id;
+    wavesurfer[id] = WaveSurfer.create(opts);
     wavesurfer[id].load(url);
     wavesurfer[id].on('ready', function(e){
       document.getElementById("track-controls-"+id).style.display = "block";
-      done();
+      resolve();
     });
   });
 };
 
-render(0, {
-  title: "HEADS ON FIRE",
-  style: "Dubstep",
-  artwork: "https://i1.sndcdn.com/artworks-nYMm8ETxSOhOWEXq-X7CZWg-t500x500.jpg",
-  description: "Winters Morning having fun with super vintage Equipment",
-  url: "dni.mp3"
-});
+fetch("tracks.json")
+  .then(response => response.json())
+  .then(json => {
+    var i = 0;
+    json.tracks.forEach(track => {
+      render(i, track);
+      i++;
+    })
+  });

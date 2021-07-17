@@ -1,17 +1,28 @@
 {
-  {
-    "title": "HEADS ON FIRE",
-    "style": "Dubstep",
-    "date": "1999-12-31",
-    "artwork": "https://i1.sndcdn.com/artworks-nYMm8ETxSOhOWEXq-X7CZWg-t500x500.jpg",
-    "description": "Winters Morning having fun with super vintage Equipment",
-    "url": "dni.mp3"
-  }, {
-    "title": "HEADS ON FIRE",
-    "date": "1999-12-31",
-    "style": "Dubstep",
-    "artwork": "https://i1.sndcdn.com/artworks-nYMm8ETxSOhOWEXq-X7CZWg-t500x500.jpg",
-    "description": "Winters Morning having fun with super vintage Equipment",
-    "url": "dni.mp3"
-  }
+  "tracks": [
+    {
+      "title": "HEADS ON FIRE - ATTACK!!!",
+      "style": "Dubstep",
+      "date": "2021-07-16",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/hof.jpg",
+      "description": "UNMASTERED",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/heads-on-fire_attack.mp3"
+    },
+    {
+      "title": "dni - Tune1",
+      "style": "Dubstep",
+      "date": "2021-07-10",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/mixer.jpg",
+      "description": "Access Virus A - Main Synth, Proteus1, MPC2000",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/dni-tune1.mp3"
+    },
+    {
+      "title": "dni - Tune2",
+      "style": "Dubstep",
+      "date": "2021-07-10",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/mixer.jpg",
+      "description": "Access Virus A - Main Synth, Proteus1, MPC2000",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/dni-tune2.mp3"
+    }
+  ]
 }

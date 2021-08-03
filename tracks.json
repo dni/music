@@ -1,6 +1,14 @@
 {
   "tracks": [
     {
+      "title": "pramma & dni - Dungu Dub",
+      "style": "Dub",
+      "date": "2021-08-03",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/aliendna.jpg",
+      "description": "new dub choon",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/pramma-dni_dungu-dub.mp3"
+    },
+    {
       "title": "HEADS ON FIRE - ATTACK!!!",
       "style": "Dubstep",
       "date": "2021-07-16",
@@ -31,6 +39,14 @@
       "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/dynacord.jpg",
       "description": "mc303, roland sh32, echo dynachord tape delay ;)",
       "url": "https://d261tqllhzwogc.cloudfront.net/tracks/session_08_11_2018.mp3"
+    },
+    {
+      "title": "dni - Alien DNA",
+      "style": "Dubstep",
+      "date": "2017-08-08",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/aliendna.jpg",
+      "description": "new choon ;)",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/aliendna.mp3"
     }
   ]
 }

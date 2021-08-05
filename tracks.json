@@ -1,6 +1,14 @@
 {
   "tracks": [
     {
+      "title": "dni - Techno2",
+      "style": "Techno",
+      "date": "2021-08-05",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/artwork-techno2.jpeg",
+      "description": "new dub choon",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/dni-techno2.mp3"
+    },
+    {
       "title": "pramma & dni - Dungu Dub",
       "style": "Dub",
       "date": "2021-08-03",

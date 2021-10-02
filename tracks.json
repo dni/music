@@ -1,6 +1,14 @@
 {
   "tracks": [
     {
+      "title": "HEADS ON FIRE - NEW TUNE",
+      "style": "Dubstep",
+      "date": "2021-10-02",
+      "artwork": "https://d261tqllhzwogc.cloudfront.net/artworks/hof.jpg",
+      "description": "first tune after EP",
+      "url": "https://d261tqllhzwogc.cloudfront.net/tracks/hof-nejw.mp3"
+    },
+    {
       "title": "HEADS ON FIRE - ARRIVAL EP",
       "style": "Dubstep",
       "date": "2021-08-26",
